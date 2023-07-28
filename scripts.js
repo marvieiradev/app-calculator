@@ -10,6 +10,7 @@ function clicarBotao(valor) {
     } else {
         tratarNumero(valor);
     }
+    tela.innerText = armazenado;
 }
 
 function tratarSimbolo(simbolo) {
@@ -34,7 +35,7 @@ function tratarSimbolo(simbolo) {
             if (armazenado.length === 1) {
                 armazenado = '0';
             } else {
-                armazenado = armazenado.toString(0, armazenado.length - 1);
+                armazenado = armazenado.substring(0, armazenado.length - 1);
             }
             break;
 
@@ -67,7 +68,7 @@ function tratarExpressao(simbolo) {
 function resolverOperacao(cnvtArmazenado) {
     if (operadorAnterior === '+') {
         totalAtual += cnvtArmazenado;
-    } else if (operadorAnterior === '-') {
+    } else if (operadorAnterior === '−') {
         totalAtual -= cnvtArmazenado;
     } else if (operadorAnterior === '×') {
         totalAtual *= cnvtArmazenado;

@@ -99,6 +99,7 @@ body {
 
 .duplo{
     flex-basis: 47%;
+    background: rgba(255, 222, 206, 0.75)
 }
 
 .triplo{
