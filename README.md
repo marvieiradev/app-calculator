@@ -8,4 +8,4 @@ Uma calculadora simples onde é possível realizar oparações matemáticas simp
 
 Projeto desenvolvido utilizando apenas HTML, CSS e JavaScript.
 
-<img src="screenshot.jpg"/>
+<img src="screenshot.png"/>
